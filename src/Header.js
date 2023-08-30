@@ -1,13 +1,14 @@
+import "./App.css";
 import Nav from "./Nav";
-import Logo from "./images/Logo.png";
+import Logo from "./images/littleLemonLogo.png";
 
 function Header()
 {
     return(
-        <>
-            <img src={Logo} alt="Little Lemon Logo"/>
+        <header className="header">
+            <img className="logo" src={Logo} alt="Little Lemon Logo" />
             <Nav />
-        </>
+        </header>
     );
 }
 

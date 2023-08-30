@@ -1,7 +1,11 @@
+import "./App.css";
+import Logo from "./images/littleLemonLogo.png";
+
 function Footer()
 {
     return(
-        <>
+        <footer className="footer">
+            <img src={Logo} alt="Little Lemon Logo" style={{width: "70%", height: "auto"}} />
             <div>
                 <h2>Doormat Navigation</h2>
                 <ul>
@@ -31,7 +35,7 @@ function Footer()
                     <li>Email</li>
                 </ul>
             </div>
-        </>
+        </footer>
     );
 }
 

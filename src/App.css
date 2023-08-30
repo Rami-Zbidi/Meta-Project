@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+/* App Start*/
+.container
+{
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  padding-bottom: 10vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li
+{
+  color: #333333;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a
+{
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  font-family: 'Markazi Text', serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+p
+{
+  font-family: 'Karla', sans-serif;
+}
+
+h1
+{
+  color: #f4ce14;
+  font-size: 4em;
+}
+
+h3
+{
+  color: #edefee;
+  font-size: 2em;
+}
+
+.button
+{
+  background-color: #f4ce14;
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+/* App end */
+
+/* Nav start */
+.navBar
+{
   display: flex;
-  flex-direction: column;
+  gap: 2vw;
+}
+/* Nav end */
+
+/* Header start */
+.header
+{
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo
+{
+  width: 20%;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px)
+{
+  .header
+  {
+    display: grid;
+    grid-template-rows: 30vh 10vh;
+    align-items: center;
+    justify-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .logo
+  {
+    width: 60%;
+    height: auto;
   }
 }
+/* Header end */
+
+/* Main start */
+.hero
+{
+  background-color: #495e57;
+  height: 45vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero .heroImg
+{
+  width: 20vw;
+  height: auto;
+  border-radius: 16px;
+}
+
+.description p
+{
+  color: #edefee;
+  font-size: 1.3em;
+  max-width: 25ch;
+}
+/* Main end */
+
+/* Footer start */
+.footer
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: top;
+}
+
+@media (max-width: 768px) 
+{
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 10vh;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer  h2
+  {
+    margin-bottom: 5vh;
+  }
+}
+/* Footer end */
