@@ -1,5 +1,5 @@
-import "./App.css";
-import Logo from "./images/littleLemonLogo.png";
+import "../App.css"
+import Logo from "../images/littleLemonLogo.png";
 
 function Footer()
 {

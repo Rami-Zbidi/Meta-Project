@@ -1,8 +1,11 @@
 /* App Start*/
 .container
 {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-top: 2em;
+  padding-bottom: 4em;
 }
 
 ul
@@ -121,11 +124,12 @@ article
 /* Header start */
 .header
 {
+  height: fit-content;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 3vh;
 }
 
 .logo
@@ -194,6 +198,7 @@ article
     align-items: center;
     height: 40vh;
     text-align: center;
+    padding-top: 4em;
   }
 }
   /* Hero end */
@@ -258,6 +263,18 @@ article
   {
     font-weight: 500;
     font-size: 20px;
+  }
+
+  @media (max-width: 570px)
+  {
+    .specials .heading
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+    }
   }
   /* Highlights end */
 
@@ -370,3 +387,114 @@ article
   }
 }
 /* Footer end */
+
+/* Reservation start */
+.bookingPage
+{
+  margin-bottom: 5em;
+}
+
+.bookingForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookingForm form {
+  display: grid;
+  gap: 20px;
+}
+
+.bookingForm label {
+  font-weight: bold;
+}
+
+.bookingForm input[type="text"],
+.bookingForm input[type="date"],
+.bookingForm input[type="number"],
+.bookingForm select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.bookingForm select {
+  appearance: none;
+}
+
+.bookingForm input[type="submit"] {
+  width: 100%;
+  height: 3em;
+  padding: 10px;
+  background-color: #495e57;
+  color: #edefee;
+  font-size: 1.4em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 2em;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+.bookingForm input[type="submit"]:hover {
+  background-color: #394944;
+}
+
+/* Reservation end */
+
+/* Confirmed booking start */
+.confirm-card
+{
+  width: fit-content;
+  margin: 5em auto 5em auto;
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #edefee;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  white-space:nowrap;
+}
+
+/* Confirmed booking end */
+
+/* Construction start */
+.construction
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.construction h1
+{
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  font-size: 3em;
+  white-space: nowrap;
+}
+
+.construction img
+{
+  width: 40vw;
+  height: auto;
+}
+/* Construction end */

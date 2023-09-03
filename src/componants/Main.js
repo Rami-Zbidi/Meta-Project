@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 
-import heroImg from "./images/restauranfood.jpg";
-import star from "./images/star.png";
-import person1 from "./images/person1.jpg";
-import person2 from "./images/person2.jpg";
-import person3 from "./images/person3.jpg";
-import person4 from "./images/person4.jpg";
-import chefs from "./images/Mario and Adrian A.jpg";
-import restaurant from "./images/restaurant.jpg";
-import "./App.css";
+import heroImg from "../images/restauranfood.jpg";
+import star from "../images/star.png";
+import person1 from "../images/person1.jpg";
+import person2 from "../images/person2.jpg";
+import person3 from "../images/person3.jpg";
+import person4 from "../images/person4.jpg";
+import chefs from "../images/Mario and Adrian A.jpg";
+import "../App.css";
 
 function Main()
 {
@@ -30,7 +29,7 @@ function Main()
                 <div className="specials">
                     <div className="heading">
                         <h1 className="h1Black">Specials</h1>
-                        <a className="button" href="#" role="button">Online menu</a>
+                        <Link className="button" to="/construction">Online menu</Link>
                     </div>
                     
                     <div className="cardList">

@@ -1,7 +1,6 @@
-
-import "./App.css";
+import "../App.css";
 import Nav from "./Nav";
-import Logo from "./images/littleLemonLogo.png";
+import Logo from "../images/littleLemonLogo.png";
 
 function Header()
 {
@@ -13,4 +12,4 @@ function Header()
     );
 }
 
-export default Header;
+export default Header; 
