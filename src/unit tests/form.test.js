@@ -14,7 +14,7 @@ describe('BookingForm', () => {
     const { getByLabelText } = render(<BookingForm />);
     const timeInput = getByLabelText('Choose time');
 
-    expect(timeInput).toHaveAttribute('value');
+    expect(timeInput).toHaveAttribute('required');
   });
 
   it('should render a number input field with the min attribute', () => {

@@ -1,11 +1,11 @@
 // app.js
 import { Routes, Route } from "react-router-dom";
 
-import Header from "./componants/Header";
-import Main from "./componants//Main";
+import Header from "./components/Header";
+import Main from "./components//Main";
 import BookingPage from "./pages/BookingPage";
-import Footer from "./componants/Footer";
-import ConfirmedBooking from "./componants/confirmedBooking";
+import Footer from "./components/Footer";
+import ConfirmedBooking from "./components/confirmedBooking";
 import Construction from "./pages/Construction";
 
 function App() {

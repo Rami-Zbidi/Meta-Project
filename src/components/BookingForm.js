@@ -48,25 +48,26 @@ export default function BookingForm({availableTimes, dispatch, submitForm}) {
 
         <form style={{ display: 'grid', maxWidth: 200, gap: 20 }} onSubmit={handleSubmit}>
 
-              <label htmlFor="res-date">Choose date</label>
-              <input type="date" id="res-date" name="date" value={formData.date} onChange={handleDateChange} required min={currentDate}/>
+          <label htmlFor="res-date">Choose date</label>
+          <input type="date" id="res-date" name="date" value={formData.date} onChange={handleDateChange} required min={currentDate}/>
             
-              <label htmlFor="time">Choose time</label>
-              <select id="time " name="time" value={formData.time} required onChange={handleFormChange}>
-                {options}
-              </select>
+          <label htmlFor="time">Choose time</label>
+          <select id="res-time " name="time" value={formData.time} required onChange={handleFormChange}>
+            {options}
+          </select>
             
-              <label htmlFor="guests">Number of guests</label>
-              <input type="number" placeholder="1" min="1" max="10" required id="guests" name="noOfGuests" value={formData.noOfGuests} onChange={handleFormChange}/>
+          <label htmlFor="guests">Number of guests</label>
+          <input type="number" placeholder="1" min="1" max="10" required id="guests" name="noOfGuests" value={formData.noOfGuests} onChange={handleFormChange}/>
             
-              <label htmlFor="occasion">Occasion</label>
-              <select id="occasion" name="occasion" required value={formData.occasion} onChange={handleFormChange}>
-                <option>Birthday</option>
-                <option>Anniversary</option>
-              </select>
+          <label htmlFor="occasion">Occasion</label>
+          <select id="occasion" name="occasion" required value={formData.occasion} onChange={handleFormChange}>
+            <option>Birthday</option>
+            <option>Anniversary</option>
+          </select>
             
           <input className="submit" type="submit" value="Reserve" aria-label="On Click submit"/>
-      </form>
+          
+        </form>
 
       </div>
     )
