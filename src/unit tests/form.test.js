@@ -10,5 +10,24 @@ describe('BookingForm', () => {
     expect(dateInput).toHaveAttribute('required');
   });
 
-  // Add similar tests for other input fields and their respective attributes
+  it('should render a time selection field with the required attribute', () => {
+    const { getByLabelText } = render(<BookingForm />);
+    const timeInput = getByLabelText('Choose time');
+
+    expect(timeInput).toHaveAttribute('value');
+  });
+
+  it('should render a number input field with the min attribute', () => {
+    const { getByLabelText } = render(<BookingForm />);
+    const numberInput = getByLabelText('Number of guests');
+
+    expect(numberInput).toHaveAttribute('min');
+  });
+
+  it('should render an occasion selection input field with the required attribute', () => {
+    const { getByLabelText } = render(<BookingForm />);
+    const occasionInput = getByLabelText('Occasion');
+
+    expect(occasionInput).toHaveAttribute('required');
+  });
 });
