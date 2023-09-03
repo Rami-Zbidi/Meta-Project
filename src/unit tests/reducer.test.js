@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { initializeTimes } from "../pages/BookingPage";
 import { updateTimes } from "../pages/BookingPage";
-import BookingForm from "../componants/BookingForm";
+import BookingForm from "../components/BookingForm";
 import { fetchAPI } from "../api";
 
 test('Renders the BookingForm heading', () => {
